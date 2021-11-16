@@ -3,7 +3,7 @@
 //--INCLUDES--//
 #include <SFML/Graphics.hpp>
 
-#include "TextureHolder.h"
+#include "TextureManager.h"
 #include "std_lib_facilities.h"
 
 // -----------------------------------------------------------------------------
