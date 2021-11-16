@@ -6,6 +6,12 @@
 #include "TextureManager.h"
 #include "std_lib_facilities.h"
 
+/*
+	This simple program does two things:
+	1) Displays the number of seconds since the program started
+	2) Chooses to display a random text message every second
+*/
+
 // -----------------------------------------------------------------------------
 
 void setTextUp(Text& pText, const Vector2f& pPos, const Font& pFont, int pcharSize, Color pColour, const std::string& pMsg /*=""*/)
@@ -27,7 +33,7 @@ int main()
 	RenderWindow window(VideoMode(800, 600), "SFML Testing Ground");
 
 	// Doge
-	Sprite sprite(Sprite(TextureManager::getTexture("graphics/doge.png")));
+	Sprite sprite(Sprite(TextureManager::getTexture("doge.png")));
 	sprite.setPosition(Vector2f(300, 200));
 
 	string msg1 = "such precise";
