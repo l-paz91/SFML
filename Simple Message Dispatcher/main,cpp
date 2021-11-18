@@ -4,6 +4,8 @@
 #include <SFML/Graphics.hpp>
 
 #include "MessageDispatcher.h"
+
+// find the following headers here: https://github.com/l-paz91/SFML/tree/main/Simple%20Timer
 #include "TextureHolder.h"
 #include "std_lib_fac.h"
 
