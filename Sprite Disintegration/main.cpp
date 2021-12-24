@@ -8,7 +8,7 @@ using namespace sf;
 
 /*
 	This program demonstrates how to create a simple "disintegration" effect with
-  sprites.
+  	sprites.
 */
 
 // -----------------------------------------------------------------------------
@@ -191,7 +191,7 @@ int main()
 			{
 				const Vector2f& pos = cannonLaser.mLaser.getPosition();
         
-        // little random offsets to shot
+        			// little random offsets to shot
 				int randX = randint(-8, 0);
 				int randY = randint(10, 12);
 				shotMask.setPosition(pos.x+randX, pos.y-randY);
