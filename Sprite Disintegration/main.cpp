@@ -106,7 +106,7 @@ bool perPixelCollision(RectangleShape& pRectShape, Sprite& pSprite, const Image&
 	const Vector2i& laserPos = (Vector2i)pRectShape.getPosition();
 
 	// has the laser hit a solid pixel - I'm using a few different points on the laser
-  // due to the speed it moves at
+  	// due to the speed it moves at
 	Color pixel = pSpriteImage.getPixel(laserPos.x, laserPos.y);
 	Color pixel2 = pSpriteImage.getPixel(laserPos.x+2, laserPos.y);
 	Color pixel3 = pSpriteImage.getPixel(laserPos.x, laserPos.y-5);
