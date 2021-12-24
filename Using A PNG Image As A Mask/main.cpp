@@ -18,23 +18,26 @@ int main()
 
 	// clock for timing
 	Clock clock;
-
-	// create an array of 4 vertices that define a rectangle primitive
-
+	
+	// the texture/sprite we want to modify
 	Texture texture;
 	texture.loadFromFile("doge.png");
 	Sprite dogeShield(texture);
 	dogeShield.setPosition(300, 100);
-
+	
+	// we'll draw/modify our sprite on this render target, then turn it into a texture
+	// when we want to display it
 	RenderTexture target;
 	target.create(800, 600);
 	target.clear();
 	target.draw(dogeShield);
 	target.display();
 
+	// this sprite will hold our modified sprite
 	Sprite targetSprite(target.getTexture());
 	targetSprite.setPosition(0, 0);
 
+	// create the mask sprite
 	Texture shotMaskTexture;
 	shotMaskTexture.loadFromFile("invaderShotExplodingInverse.png");
 	Sprite shotMask(shotMaskTexture);
